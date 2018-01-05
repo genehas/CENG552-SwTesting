@@ -14,11 +14,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.stream.XMLStreamException;
 import org.xml.sax.SAXException;
 
-/**
- *
- * @author Ferhat-PC
- */
-
 public class WEBUIApplication {
 
     private static File _file;

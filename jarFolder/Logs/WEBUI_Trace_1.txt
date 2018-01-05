@@ -1,0 +1,90 @@
+INFO : -DO Paramaters argument is : -DO=BROWSEROP:LoginWebsiteAndLogout.txt
+INFO : -ID Paramaters argument is : 0
+INFO : -MAP Paramaters argument is : Trendyol.xml
+INFO : -DUT Paramaters argument is : DUT.txt
+BROWSEROP
+INFO : required object id is exist.
+INFO : Will be create UI Instance.
+INFO : Come to doTestCase : |BROWSEROP|
+INFO : doing Browser Operation.
+INFO : Test step parse operation done successfully.
+INFO : Operation 0 : CLICK
+INFO : Object ID 0 : 3000
+INFO : Parameter 0 : -
+INFO : Operation 1 : SETPARAM
+INFO : Object ID 1 : 3001
+INFO : Parameter 1 : burcu1988-1988@hotmail.com
+INFO : Operation 2 : SETPARAM
+INFO : Object ID 2 : 3002
+INFO : Parameter 2 : 25815946b
+INFO : Operation 3 : CLICK
+INFO : Object ID 3 : 3003
+INFO : Parameter 3 : -
+INFO : Operation 4 : CLICK
+INFO : Object ID 4 : 3004
+INFO : Parameter 4 : -
+INFO : Operation List prepared succesfully.
+INFO : will be check ObjectID. Comming ID is : 3000
+INFO : will be check uniqID in mapList
+INFO : Uniq ID has been found in objectList.
+INFO : required object id is exist.
+INFO : Uniq ID has been found return objectList.
+INFO : Will be create UI Instance.
+Click Object : logo-icon
+INFO : Clicked to object.
+PASS : Test Step is success
+INFO : will be check ObjectID. Comming ID is : 3001
+INFO : will be check uniqID in mapList
+INFO : Uniq ID has been found in objectList.
+INFO : required object id is exist.
+INFO : Uniq ID has been found return objectList.
+INFO : Will be create UI Instance.
+TEST STEP : Setted Object: fEmail
+TEST STEP : Setted Parameter: burcu1988-1988@hotmail.com
+WRONG : Doesnt seems any alert message on the WEB UI.
+ERROR : Parameter could not setted. Exception : org.openqa.selenium.NoSuchElementException: Unable to locate element: #fEmail
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'BURCUERGUNNHP', ip: '172.16.4.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\BURCU~1.ERG\AppData\Local\Temp\rust_mozprofile.I03z3ABv8d4O, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0, platformVersion=10.0, moz:processID=23744.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: 34bbfd28-42ee-46e3-9e4d-d23be50c49e0
+*** Element info: {Using=id, value=fEmail}
+INFO : will be check ObjectID. Comming ID is : 3002
+INFO : will be check uniqID in mapList
+INFO : Uniq ID has been found in objectList.
+INFO : required object id is exist.
+INFO : Uniq ID has been found return objectList.
+INFO : Will be create UI Instance.
+TEST STEP : Setted Object: LoginModel_Password
+TEST STEP : Setted Parameter: 25815946b
+WRONG : Doesnt seems any alert message on the WEB UI.
+ERROR : Parameter could not setted. Exception : org.openqa.selenium.NoSuchElementException: Unable to locate element: #LoginModel_Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'BURCUERGUNNHP', ip: '172.16.4.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\BURCU~1.ERG\AppData\Local\Temp\rust_mozprofile.I03z3ABv8d4O, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0, platformVersion=10.0, moz:processID=23744.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: 34bbfd28-42ee-46e3-9e4d-d23be50c49e0
+*** Element info: {Using=id, value=LoginModel_Password}
+INFO : will be check ObjectID. Comming ID is : 3003
+INFO : will be check uniqID in mapList
+INFO : Uniq ID has been found in objectList.
+INFO : required object id is exist.
+INFO : Uniq ID has been found return objectList.
+INFO : Will be create UI Instance.
+Click Object : loginSubmitButton
+INFO : will be check ObjectID. Comming ID is : 3004
+INFO : will be check uniqID in mapList
+INFO : Uniq ID has been found in objectList.
+INFO : required object id is exist.
+INFO : Uniq ID has been found return objectList.
+INFO : Will be create UI Instance.
+Click Object : logo-icon
+INFO : Clicked to object.
+PASS : Test Step is success
+ERROR : Browser Operations has an error.
+FAIL : Test Result is failure.
+INFO : Will be close browser
+INFO : Will be close browser
+ERROR : Detected same error. While close web UI instance. Error code is : null

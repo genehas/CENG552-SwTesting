@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<UIMap>
+	<Uniq id="3000">
+		<Information>UyeGiris</Information>
+		<PageLink>www.1v1y.com/</PageLink>
+		<PartialObject>/html/body/div[2]/div[2]/header/nav[1]/nav[1]/a[1];</PartialObject>
+		<PageObject>/html/body/div[2]/div[2]/header/nav[1]/nav[1]/a[1]</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+    <Uniq id="3001">
+		<Information>Username</Information>
+		<PageLink>www.1v1y.com/</PageLink>
+		<PartialObject>loginmail;</PartialObject>
+		<PageObject>loginmail</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3002">
+		<Information>Password</Information>
+		<PageLink>www.1v1y.com/</PageLink>
+		<PartialObject>loginpassword;</PartialObject>
+		<PageObject>loginpassword</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3003">
+		<Information>Giris</Information>
+		<PageLink>www.1v1y.com/</PageLink>
+		<PartialObject>/html/body/div[3]/div[2]/div/div[1]/section[1]/div[1]/form/button;</PartialObject>
+		<PageObject>/html/body/div[3]/div[2]/div/div[1]/section[1]/div[1]/form/button</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3004">
+		<Information>Hesabim</Information>
+		<PageLink>www.1v1y.com/</PageLink>
+		<PartialObject>/html/body/div[2]/div[2]/header/nav[1]/nav[2]/div[1];</PartialObject>
+		<PageObject>/html/body/div[2]/div[2]/header/nav[1]/nav[2]/div[1]</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+    <Uniq id="3005">
+		<Information>Logout</Information>
+		<PageLink>www.1v1y.com/</PageLink>
+		<PartialObject>/html/body/div[2]/div[2]/header/nav[1]/nav[2]/div[2]/a[9];</PartialObject>
+		<PageObject>/html/body/div[2]/div[2]/header/nav[1]/nav[2]/div[2]/a[9]</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+</UIMap>

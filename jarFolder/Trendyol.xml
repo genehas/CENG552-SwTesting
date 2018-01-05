@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<UIMap>
+    <Uniq id="3000">
+		<Information>UyeOl</Information>
+		<PageLink>www.trendyol.com</PageLink>
+		<PartialObject>logo-icon;</PartialObject>
+		<PageObject>logo-icon</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+    <Uniq id="3001">
+		<Information>Username</Information>
+		<PageLink>www.trendyol.com</PageLink>
+		<PartialObject>fEmail;</PartialObject>
+		<PageObject>fEmail</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3002">
+		<Information>Password</Information>
+		<PageLink>www.trendyol.com</PageLink>
+		<PartialObject>LoginModel_Password;</PartialObject>
+		<PageObject>LoginModel_Password</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3003">
+		<Information>Giris</Information>
+		<PageLink>www.trendyol.com</PageLink>
+		<PartialObject>loginSubmitButton;</PartialObject>
+		<PageObject>loginSubmitButton</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3004">
+		<Information>Hesabim</Information>
+		<PageLink>www.trendyol.com/?e=Login</PageLink>
+		<PartialObject>logo-icon;</PartialObject>
+		<PageObject>logo-icon</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+    <Uniq id="3005">
+		<Information>Logout</Information>
+		<PageLink>www.trendyol.com/?e=Login</PageLink>
+		<PartialObject>/html/body/div[1]/div[2]/div/div[3]/div/ul/li[1]/div[2]/div/div[9]/a;</PartialObject>
+		<PageObject>/html/body/div[1]/div[2]/div/div[3]/div/ul/li[1]/div[2]/div/div[9]/a</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+</UIMap>

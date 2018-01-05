@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<UIMap>
+    <Uniq id="3000">
+		<Information>Login Page</Information>
+		<PageLink>www.morhipo.com/kampanya/alisveris</PageLink>
+		<PartialObject>ela-header-uye-ol;</PartialObject>
+		<PageObject>ela-header-uye-ol</PageObject>
+		<ObjectType>input</ObjectType>
+		<SaveButton>save</SaveButton>
+    </Uniq>
+    <Uniq id="3001">
+		<Information>Login Page</Information>
+		<PageLink>airtiescloud.com/t/t-git-testqa</PageLink>
+		<PartialObject>-;</PartialObject>
+		<PageObject>id_password</PageObject>
+		<ObjectType>input</ObjectType>
+		<SaveButton>save</SaveButton>
+    </Uniq>
+	<Uniq id="3002">
+		<Information>Login Page</Information>
+		<PageLink>airtiescloud.com/t/t-git-testqa</PageLink>
+		<PartialObject>id_username;</PartialObject>
+		<PageObject>id_remember</PageObject>
+		<ObjectType>input</ObjectType>
+		<SaveButton>save</SaveButton>
+    </Uniq>
+	<Uniq id="3003">
+		<Information>Login Page</Information>
+		<PageLink>airtiescloud.com/t/t-git-testqa</PageLink>
+		<PartialObject>id_username;</PartialObject>
+		<PageObject>id_submit</PageObject>
+		<ObjectType>button</ObjectType>
+		<SaveButton>save</SaveButton>
+    </Uniq>
+	<Uniq id="3003">
+		<Information>Login Page</Information>
+		<PageLink>airtiescloud.com/t/t-git-testqa</PageLink>
+		<PartialObject>id_username;</PartialObject>
+		<PageObject>lnk_Home</PageObject>
+		<ObjectType>a</ObjectType>
+		<SaveButton>save</SaveButton>
+    </Uniq>
+    <Uniq id="3004">
+		<Information>Login Page</Information>
+		<PageLink>airtiescloud.com/t/t-git-testqa</PageLink>
+		<PartialObject>id_username;</PartialObject>
+		<PageObject>reset_password</PageObject>
+		<ObjectType>a</ObjectType>
+		<SaveButton>save</SaveButton>
+    </Uniq>
+</UIMap>

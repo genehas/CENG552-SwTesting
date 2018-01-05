@@ -244,21 +244,27 @@ public class BrowserOperation {
 		 try {
 			System.out.println("Click Object : "+Object.ObjectID);
 	    	Driver.Driver.LogInstance.add("Click Object : "+Object.ObjectID);
-	        WebElement UIElement = driver.findElement(By.id(Object.ObjectID.toString()));
-	        if(UIElement==null){
+	    	System.out.println("huuuu huuuu");
+	    	WebElement UIElement = getElementByID(Object.ObjectID,driver);
+	    	System.out.println("huuuu huuuu2"+UIElement);
+	    	System.out.println("huuuu huuuu2");
+	    	if(UIElement==null){
                 Driver.Driver.LogInstance.add("INFO : Trying to find partial element by Xpath instead");
-                UIElement = getElementByXpath(Object.ObjectID,UIElement);
+                UIElement = getElementByXpath(Object.ObjectID,driver);
 	        }
+	        System.out.println("UIELement: "+UIElement);
 	        UIElement.click();
 	        Driver.Driver.LogInstance.add("INFO : Clicked to object.");
 	        Thread.sleep(3000);
-	        try {
+	       /* try {
 	            driver.switchTo().alert().accept();
 	        } catch (Exception e) {
 	            Driver.Driver.LogInstance.add("WRONG : Doesnt seems any alert message on the WEB UI.");
-	        }
+	        }*/
 	        return true;
-	 }catch (Exception e)  {return false;}
+	 }catch (Exception e)  {
+	         Driver.Driver.LogInstance.add("ERROR : Could not clicked to object.");
+		 return false;}
 	    }
 	 public static boolean IsExistObject(MAPEntities Object, WebDriver driver) throws InterruptedException{
 		 try {
@@ -273,7 +279,7 @@ public class BrowserOperation {
 		    WebElement UIElement = driver.findElement(By.id(Object.ObjectID.toString()));
 		    if(UIElement==null){
                 Driver.Driver.LogInstance.add("INFO : Trying to find partial element by Xpath instead");
-                UIElement = getElementByXpath(Object.ObjectID,UIElement);
+                UIElement = getElementByXpath(Object.ObjectID,driver);
 	        }
 	        if(UIElement.isEnabled()) {
 	        Driver.Driver.LogInstance.add("INFO : Object is exist");
@@ -297,7 +303,7 @@ public class BrowserOperation {
 	        WebElement UIElement = driver.findElement(By.id(Object.ObjectID));
 	        if(UIElement==null){
                 Driver.Driver.LogInstance.add("INFO : Trying to find partial element by Xpath instead");
-                UIElement = getElementByXpath(Object.ObjectID,UIElement);
+                UIElement = getElementByXpath(Object.ObjectID,driver);
 	        }
 	        if(UIElement.getText().equals(Param)) 
 	        {
@@ -327,7 +333,7 @@ public class BrowserOperation {
 		    WebElement UIElement = driver.findElement(By.id(Object.ObjectID.toString()));
 		    if(UIElement==null){
                 Driver.Driver.LogInstance.add("INFO : Trying to find partial element by Xpath instead");
-                UIElement = getElementByXpath(Object.ObjectID,UIElement);
+                UIElement = getElementByXpath(Object.ObjectID,driver);
 	        }
 	        UIElement.sendKeys(Param);
 	        Driver.Driver.LogInstance.add("TEST STEP : Parameter setted.");
@@ -338,10 +344,22 @@ public class BrowserOperation {
 		 Driver.Driver.LogInstance.add("ERROR : Parameter could not setted. Exception : "+e);
 		 return false;}
 	    }
-	  private static WebElement getElementByXpath(String xpath,WebElement UIElement){
+	  private static WebElement getElementByXpath(String xpath,WebDriver driver){
 	        try{
-	            return UIElement.findElement(By.xpath(xpath));
+	        	System.out.println("huuuu huuuu6");
+	        	return driver.findElement(By.xpath(xpath));
+	        	
 	        }catch(Exception e){
+	        	System.out.println("huuuu huuuu8");
+	            return null;
+	        }
+	    }
+	  private static WebElement getElementByID(String id,WebDriver driver){
+		  try{
+			  System.out.println("huuuu huuuu3");
+	        	return driver.findElement(By.id(id));
+	        } catch(Exception e){
+	        	System.out.println("huuuu huuuu4");
 	            return null;
 	        }
 	    }

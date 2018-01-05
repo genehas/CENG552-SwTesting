@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<UIMap>
+	<Uniq id="3000">
+		<Information>UyeGiris</Information>
+		<PageLink>www.morhipo.com/kampanya/alisveris</PageLink>
+		<PartialObject>ela-header-uye-girisi;</PartialObject>
+		<PageObject>ela-header-uye-girisi</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+    <Uniq id="3001">
+		<Information>Username</Information>
+		<PageLink>www.morhipo.com/kampanya/alisveris</PageLink>
+		<PartialObject>Username;</PartialObject>
+		<PageObject>Username</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3002">
+		<Information>Password</Information>
+		<PageLink>www.morhipo.com/kampanya/alisveris</PageLink>
+		<PartialObject>Password;</PartialObject>
+		<PageObject>Password</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3003">
+		<Information>Giris</Information>
+		<PageLink>www.morhipo.com/kampanya/alisveris</PageLink>
+		<PartialObject>send-data;</PartialObject>
+		<PageObject>send-data</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3004">
+		<Information>Hesabim</Information>
+		<PageLink>www.morhipo.com/kampanya/alisveris</PageLink>
+		<PartialObject>myaccount;</PartialObject>
+		<PageObject>myaccount</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+    <Uniq id="3005">
+		<Information>Logout</Information>
+		<PageLink>www.morhipo.com/kampanya/alisveris</PageLink>
+		<PartialObject>ela-header-hesabim-cikis;</PartialObject>
+		<PageObject>ela-header-hesabim-cikis</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+</UIMap>
