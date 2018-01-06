@@ -59,7 +59,9 @@ public class readArguments extends ParsingOperation.doParsingOperation{
                         System.exit(-1);
                     }else {
                         System.out.println("INFO : Will be read dut config.");
-                        readFile(Driver._DUTConf);
+                        System.out.println("readfile : "+readFile(Driver._DUTConf));
+                        System.out.println("Argumetn Count : "+ArgumentsCount);
+                       
                     }
                 }
                 if (Pattern.compile("-f").matcher(Arguments[i].toString()).find()){

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<UIMap>
+    <Uniq id="3000">
+		<Information>Login Page</Information>
+		<PageLink></PageLink>
+		<PartialObject>id_username</PartialObject>
+		<PageObject>id_username</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+    <Uniq id="3001">
+		<Information>Login Page</Information>
+		<PageLink></PageLink>
+		<PartialObject>id_password</PartialObject>
+		<PageObject>id_password</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3002">
+		<Information>Login Page</Information>
+		<PageLink></PageLink>
+		<PartialObject></PartialObject>
+		<PageObject>id_remember</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3003">
+		<Information>Login Page</Information>
+		<PageLink></PageLink>
+		<PartialObject></PartialObject>
+		<PageObject>id_submit</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3004">
+		<Information>Login Page</Information>
+		<PageLink>airtiescloud.com/t/t-git-testqa</PageLink>
+		<PartialObject></PartialObject>
+		<PageObject>lnk_Home</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+    <Uniq id="3005">
+		<Information>Login Page</Information>
+		<PageLink></PageLink>
+		<PartialObject></PartialObject>
+		<PageObject>reset_password</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>idemail
+    </Uniq>
+	<Uniq id="3006">
+		<Information>Login Page</Information>
+		<PageLink></PageLink>
+		<PartialObject></PartialObject>
+		<PageObject>idemail</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3006">
+		<Information>Login Page</Information>
+		<PageLink></PageLink>
+		<PartialObject></PartialObject>
+		<PageObject>send_link</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	<Uniq id="3007">
+		<Information>AccountName</Information>
+		<PageLink></PageLink>
+		<PartialObject></PartialObject>
+		<PageObject>/html/body/div[1]/div/div[2]/ul[2]/li/a</PageObject>
+		<ObjectType></ObjectType>
+		<SaveButton></SaveButton>
+    </Uniq>
+	
+</UIMap>

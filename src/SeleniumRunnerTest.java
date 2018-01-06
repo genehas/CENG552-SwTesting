@@ -1,9 +1,8 @@
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import Entities.MAPEntities;
 
@@ -12,6 +11,22 @@ public class SeleniumRunnerTest {
 	public static WebDriver driver=null;
 	public MAPEntities object=null;
 	public String Param="";
+	public String Arguments[]=new String[4];
+	
+	@Before
+	public void FillArguments()
+	{
+		Arguments[0]="-DO=BROWSEROP:CloudLoginPageTest.txt";
+		Arguments[1]="-ID=0";
+		Arguments[2]="-MAP=CloudPageMap.xml";
+		Arguments[3]="-DUT=DUT.txt";
+	}
+	@Test
+	public void ReadUserArguments() throws InterruptedException {
+		TestOperation.readArguments test= new TestOperation.readArguments();
+		boolean output=test.readUserArguments(Arguments);
+		assertEquals(true, output);
+	}
 	@Test
 	public void BrowserOperations() {
 		UIOperation.BrowserOperation test= new UIOperation.BrowserOperation();
@@ -80,6 +95,7 @@ public class SeleniumRunnerTest {
 		boolean output=test.closeWEBUI();
 		assertEquals(false, output);
 	}
+	
 	
 
 }
