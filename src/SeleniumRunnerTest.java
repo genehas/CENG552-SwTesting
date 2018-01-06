@@ -50,6 +50,36 @@ public class SeleniumRunnerTest {
 		boolean output=test.SetParam(object, Param, driver);
 		assertEquals(false, output);
 	}
-
+	@Test
+	public void VerfyParam() throws InterruptedException {
+		UIOperation.BrowserOperation test= new UIOperation.BrowserOperation();
+		boolean output=test.VerifyParam(object, Param, driver);
+		assertEquals(false, output);
+	}
+	@Test
+	public void GetMApObject() throws InterruptedException {
+		UIOperation.BrowserOperation test= new UIOperation.BrowserOperation();
+		MAPEntities output=test.getMapObject("");
+		assertEquals(null, output);
+	}
+	@Test
+	public void GetMApObjectUI() throws InterruptedException {
+		UIOperation.UIDriver test= new UIOperation.UIDriver();
+		MAPEntities output=test.getMapObject("");
+		assertEquals(null, output);
+	}
+	@Test
+	public void CheckObjectUI() throws InterruptedException {
+		UIOperation.UIDriver test= new UIOperation.UIDriver();
+		boolean output=test.checkObjectID("");
+		assertEquals(false, output);
+	}
+	@Test
+	public void CloseWEBUI() throws InterruptedException {
+		UIOperation.UIDriver test= new UIOperation.UIDriver();
+		boolean output=test.closeWEBUI();
+		assertEquals(false, output);
+	}
+	
 
 }

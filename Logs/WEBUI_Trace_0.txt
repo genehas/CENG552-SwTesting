@@ -1,2 +1,0 @@
-ERROR : set object error. Error code is : 
-ERROR : Test step parse operation could not done.

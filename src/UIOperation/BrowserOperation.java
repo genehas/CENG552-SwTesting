@@ -198,7 +198,7 @@ public class BrowserOperation {
 	            }else {
 	                Driver.Driver.LogInstance.add("WRONG : Map Object is null.");
 	                System.out.println("WRONG : Map Object is null.");
-	                
+	                return null;
 	            }
 	        }
 	        System.out.println("Map object is : "+MapObject.ObjectID);
@@ -217,6 +217,11 @@ public class BrowserOperation {
 	                    }
 	                }
 	            }
+	            else return null;
+	        }
+	        else
+	        {
+	        	return null;
 	        }
 	        Driver.Driver.LogInstance.add("WRONG : UniqID not found in objectList. Return null");
 	        return null;
