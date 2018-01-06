@@ -7,12 +7,8 @@
 package webuiapplication;
 
 import Driver.Driver;
-import ParsingOperation.doParsingOperation;
 import java.io.File;
 import java.io.IOException;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.stream.XMLStreamException;
-import org.xml.sax.SAXException;
 
 public class WEBUIApplication {
 
@@ -49,15 +45,7 @@ public class WEBUIApplication {
             }
         } catch (Exception e) {
             Driver.LogInstance.add("ERROR : FATAL Error. Error code is : " + e.getMessage());
-        }        
-       //ParsingOperation.doParsingOperation test = new doParsingOperation();
-       //test.readFile("G:\\Ferhat\\AutomationFramework\\development\\WEBUIApplication\\msf.txt");
-       //test.readXml("G:\\Ferhat\\AutomationFramework\\development\\WEBUIApplication\\xml.xml");
-       //UIOperation.WebUIOperation instance = new UIOperation.WebUIOperation();
-       //Entities.MAPEntities dene = new Entities.MAPEntities("2012", "wireless/settings/settings_new.html","ui-id-2;ui-id-1;ui-id-2;" ,"txt_ssid_1_0" , "txt_box", "__ML_save");
-       //instance.setObject(dene,"Ferhat_TEst_Deneme denedim.");
-       //instance.getAndVerifyObjectValue(dene,"Ferhat_TEst_Deneme denedim.");
-       //instance.closeWEBUI();
+        }    
     }
     
 }

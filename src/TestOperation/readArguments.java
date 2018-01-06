@@ -87,7 +87,7 @@ public class readArguments extends ParsingOperation.doParsingOperation{
         System.out.println("-ID=1233  <ID is uniq id depended xml object>");
         System.out.println("Example Command as is below;");
         System.out.println("java -jar Apps -DO=SET:SetValue -ID=1234 -MAP=../map.xml -DUT=../dut.txt");
-        System.out.println("java -jar Apps -DO=MULTISET:SetValue1,SetValue2,SetValue3 -ID=SetID1,SetID2,SetID3 -MAP=../map.xml -DUT=../dut.txt");
+        System.out.println("java -jar Apps -DO=BROWSEROP:TestStep.txt -ID=null -MAP=../map.xml -DUT=../dut.txt");
         System.out.println("########################################################################");
         System.out.println("########################################################################");
         System.out.println("");

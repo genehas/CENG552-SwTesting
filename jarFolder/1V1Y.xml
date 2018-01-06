@@ -27,7 +27,7 @@
 	<Uniq id="3003">
 		<Information>Giris</Information>
 		<PageLink>www.1v1y.com/</PageLink>
-		<PartialObject>/html/body/div[3]/div[2]/div/div[1]/section[1]/div[1]/form/button;</PartialObject>
+		<PartialObject>/html/body/div[3]/div[2]/div/div[1]/section[1]/div[1]/button;</PartialObject>
 		<PageObject>/html/body/div[3]/div[2]/div/div[1]/section[1]/div[1]/form/button</PageObject>
 		<ObjectType></ObjectType>
 		<SaveButton></SaveButton>

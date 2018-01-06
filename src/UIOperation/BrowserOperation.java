@@ -4,14 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
 import Entities.BrowserEntities;
 import Entities.UIOperationEntities;
 
@@ -25,8 +22,6 @@ public class BrowserOperation {
 	public static UIOperation.WebUIOperation UIObject;
     private static MAPEntities MapObject;
     private static int failcount=0;
-    //public static WebDriver UIInstance;
-    private static String tempFilename;
 	
     public static boolean BrowserOperations(String FileName)
     {
@@ -244,10 +239,7 @@ public class BrowserOperation {
 		 try {
 			System.out.println("Click Object : "+Object.ObjectID);
 	    	Driver.Driver.LogInstance.add("Click Object : "+Object.ObjectID);
-	    	System.out.println("huuuu huuuu");
 	    	WebElement UIElement = getElementByID(Object.ObjectID,driver);
-	    	System.out.println("huuuu huuuu2"+UIElement);
-	    	System.out.println("huuuu huuuu2");
 	    	if(UIElement==null){
                 Driver.Driver.LogInstance.add("INFO : Trying to find partial element by Xpath instead");
                 UIElement = getElementByXpath(Object.ObjectID,driver);
@@ -346,20 +338,16 @@ public class BrowserOperation {
 	    }
 	  private static WebElement getElementByXpath(String xpath,WebDriver driver){
 	        try{
-	        	System.out.println("huuuu huuuu6");
 	        	return driver.findElement(By.xpath(xpath));
 	        	
 	        }catch(Exception e){
-	        	System.out.println("huuuu huuuu8");
 	            return null;
 	        }
 	    }
 	  private static WebElement getElementByID(String id,WebDriver driver){
 		  try{
-			  System.out.println("huuuu huuuu3");
 	        	return driver.findElement(By.id(id));
 	        } catch(Exception e){
-	        	System.out.println("huuuu huuuu4");
 	            return null;
 	        }
 	    }

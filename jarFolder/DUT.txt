@@ -1,4 +1,4 @@
-WEBLINK=www.1v1y.com
+WEBLINK=airtiescloud.com/t/t-git-testqa/
 DUT:Name=
 DUT:IP=
 DUT:UserName=

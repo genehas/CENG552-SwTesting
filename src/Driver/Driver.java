@@ -9,10 +9,6 @@ package Driver;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author test
- */
 public class Driver extends  ArrayList<String> {
     public static List<Entities.MAPEntities> MapList = new ArrayList<Entities.MAPEntities>();
      public static ArrayList<String> TraceLogs = new ArrayList<String>();

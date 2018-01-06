@@ -10,7 +10,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.List;
-import java.util.regex.Pattern;
 import FileOperation.LogsOperation;
 
 public class LogsOperation extends Driver.LogsDriver {
@@ -22,7 +21,6 @@ public class LogsOperation extends Driver.LogsDriver {
     private static FileWriter fw;
     private static String LogsString = "";
     private static File FileOperation;
-    private static String ArgumentString = "";
     
     public static boolean CreateFile(String FolderName, String FileName,List<String> LogsList){
         try {

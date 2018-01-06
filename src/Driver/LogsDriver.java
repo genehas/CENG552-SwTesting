@@ -11,10 +11,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.util.Date;
 
-/**
- *
- * @author Ferhat-PC
- */
 public class LogsDriver extends  Driver{
    
     private static File _file;
