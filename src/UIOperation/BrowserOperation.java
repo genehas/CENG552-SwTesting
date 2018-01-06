@@ -101,7 +101,11 @@ public class BrowserOperation {
                 }
             }catch (Exception e) {
                 System.out.println("ERROR : operation list error. Error code is : " + e.getMessage());
+                return false;
             }
+        }
+        else {
+        	return false;
         }
         if(failcount==0) return true;
         else {
