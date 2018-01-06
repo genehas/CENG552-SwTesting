@@ -1,5 +1,0 @@
-WEBLINK=airtiescloud.com/t/t-git-testqa/
-DUT:Name=
-DUT:IP=
-DUT:UserName=
-DUT:Password=

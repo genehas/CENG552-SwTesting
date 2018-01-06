@@ -1,5 +1,8 @@
 import static org.junit.Assert.*;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -12,10 +15,16 @@ public class SeleniumRunnerTest {
 	public MAPEntities object=null;
 	public String Param="";
 	public String Arguments[]=new String[4];
-	
+	public String fileName="DUT.txt";
+	public ArrayList<String> List=new ArrayList<String>();
 	@Before
 	public void FillArguments()
 	{
+		List.add("WEBLINK=airtiescloud.com/t/t-git-testqa/");
+		List.add("DUT:Name=");
+		List.add("DUT:IP=");
+		List.add("DUT:UserName=");
+		List.add("DUT:Password=");
 		Arguments[0]="-DO=BROWSEROP:CloudLoginPageTest.txt";
 		Arguments[1]="-ID=0";
 		Arguments[2]="-MAP=CloudPageMap.xml";
@@ -25,6 +34,18 @@ public class SeleniumRunnerTest {
 	public void ReadUserArguments() throws InterruptedException {
 		TestOperation.readArguments test= new TestOperation.readArguments();
 		boolean output=test.readUserArguments(Arguments);
+		assertEquals(true, output);
+	}
+	@Test
+	public void ParsingOperationReadFile() throws InterruptedException, IOException {
+		ParsingOperation.doParsingOperation test= new ParsingOperation.doParsingOperation();
+		boolean output=test.readFile(fileName);
+		assertEquals(true, output);
+	}
+	@Test
+	public void ParsingOperationCheckEntities() throws InterruptedException, IOException {
+		ParsingOperation.doParsingOperation test= new ParsingOperation.doParsingOperation();
+		boolean output=test.CheckRequiredEntities(List);
 		assertEquals(true, output);
 	}
 	@Test
